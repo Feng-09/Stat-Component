@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(Inter-VariableFont_slntwght.ttf);
+}
+@font-face {
+  font-family: LexendDeca;
+  src: url(LexendDeca-VariableFont_wght.ttf);
+}
+/* colors */
+/* fonts */
+body {
+  background-color: hsl(233deg, 47%, 7%);
+}
+
+div.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 90vw;
+  align-items: center;
+  text-align: center;
+  margin: 9vh auto;
+  border-radius: 15px;
+}
+
+article {
+  background-color: hsl(244deg, 38%, 16%);
+  width: 100%;
+  padding: 10%;
+  padding-bottom: 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+
+.flexstats, .stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.stats {
+  height: 7.5vh;
+  margin-bottom: 5vh;
+}
+
+h1 {
+  font-family: Inter;
+  font-weight: 500;
+}
+
+.header {
+  font-family: Inter;
+  font-weight: 700;
+  margin-bottom: 1em;
+  font-size: 1.7em;
+}
+
+span {
+  color: hsl(277deg, 64%, 61%);
+}
+
+h1 {
+  color: hsl(0deg, 0%, 100%);
+}
+
+p {
+  color: hsla(0deg, 0%, 100%, 0.6);
+  font-family: LexendDeca;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.paragraph {
+  color: hsla(0deg, 0%, 100%, 0.75) !important;
+  line-height: 1.5em;
+  margin-bottom: 2em;
+}
+
+img {
+  filter: opacity(0.5) drop-shadow(0 0 hsl(277deg, 100%, 50%));
+  height: 40vh;
+  width: 90vw;
+  display: inline-block;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+
+/* desktop design */
+@media screen and (min-width: 376px) {
+  .body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 97vh;
+  }
+  div.flex {
+    flex-direction: row-reverse;
+    width: 810px;
+    height: 340px;
+    text-align: left;
+    margin: auto;
+  }
+  .flexstats, .stats {
+    flex-direction: row;
+  }
+  img {
+    border-radius: 0 9px 9px 0;
+    width: 48%;
+    height: 100%;
+  }
+  article {
+    border-radius: 9px 0 0 9px;
+    height: 100%;
+    min-width: 52%;
+    padding: 6% 10% 3% 6%;
+  }
+  .paragraph {
+    margin-bottom: 10%;
+  }
+  .stats {
+    flex-direction: column;
+    justify-content: end;
+  }
+  p {
+    font-size: 12px;
+  }
+  div h1 {
+    font-size: large;
+  }
+}/*# sourceMappingURL=index.css.map */
