@@ -30,7 +30,7 @@ div.flex {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 270px;
+  width: 279px;
   align-items: center;
   text-align: center;
   margin: auto;
@@ -108,7 +108,7 @@ img {
   border-top-right-radius: 9px;
 }
 
-.attribute {
+.attribution {
   font-family: LexendDeca;
 }
 
