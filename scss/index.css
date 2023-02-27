@@ -18,14 +18,22 @@ body {
   background-color: hsl(233deg, 47%, 7%);
 }
 
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 98vh;
+}
+
 div.flex {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 90vw;
+  width: 270px;
   align-items: center;
   text-align: center;
-  margin: 9vh auto;
+  margin: auto;
   border-radius: 15px;
 }
 
@@ -48,20 +56,26 @@ article {
 }
 
 .stats {
-  height: 7.5vh;
-  margin-bottom: 5vh;
+  height: 42px;
+  margin-bottom: 18px;
+}
+
+.stats p {
+  font-size: smaller;
 }
 
 h1 {
   font-family: Inter;
   font-weight: 500;
+  font-weight: 600;
+  font-size: large;
 }
 
 .header {
   font-family: Inter;
   font-weight: 700;
   margin-bottom: 1em;
-  font-size: 1.7em;
+  font-size: x-large;
 }
 
 span {
@@ -87,15 +101,19 @@ p {
 
 img {
   filter: opacity(0.5) drop-shadow(0 0 hsl(277deg, 100%, 50%));
-  height: 40vh;
-  width: 90vw;
+  height: 200px;
+  width: 270px;
   display: inline-block;
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
 }
 
+.attribute {
+  font-family: LexendDeca;
+}
+
 /* desktop design */
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 720px) {
   .body {
     display: flex;
     justify-content: center;
