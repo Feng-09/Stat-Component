@@ -88,7 +88,7 @@ h1 {
   font-family: Inter;
   font-weight: 700;
   margin-bottom: 1em;
-  font-size: x-large;
+  font-size: 1.7rem;
 }
 
 span {
@@ -110,6 +110,7 @@ p {
   color: hsla(0deg, 0%, 100%, 0.75) !important;
   line-height: 1.5em;
   margin-bottom: 2em;
+  font-size: 0.8rem;
 }
 
 img {
@@ -153,7 +154,7 @@ footer {
   }
   .paragraph {
     margin-bottom: 3rem;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   .stats {
     flex-direction: column;
