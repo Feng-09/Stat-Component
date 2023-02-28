@@ -47,9 +47,14 @@ $bgblue: hsl(233, 47%, 7%);
 
 body {
   background-color: $bgblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
-.body {
+main {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,19 +65,27 @@ body {
 div.flex {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   width: 279px;
+  justify-content: space-around;
   align-items: center;
   text-align: center;
-  margin: auto;
   border-radius: 15px;
+}
+
+figure {
+  background-color: $violet;
+  padding-bottom: 0;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  height: 12rem;
+  width: 100%;
 }
 
 article {
   background-color: $cardblue;
   width: 100%;
-  padding: 10%;
-  padding-bottom: 4%;
+  padding: 2rem;
+  padding-bottom: 0.8rem;
   @include flex;
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
@@ -84,8 +97,8 @@ article {
 
 .stats {
   @extend .flexstats;
-  height: 42px;
-  margin-bottom: 18px;
+  height: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 .stats p {
@@ -115,7 +128,7 @@ h1 {
 p {
   color: $whitetransparent;
   @include lexend;
-  font-size: 14px;
+  font-size: 0.9rem;
 }
 
 .paragraph {
@@ -125,60 +138,55 @@ p {
 }
 
 img {
-  filter: opacity(0.5) drop-shadow(0 0 $purple);
-  height: 200px;
-  width: 279px;
-  display: inline-block;
+  // filter: opacity(0.5) drop-shadow(0 0 $purple);
+  // height: 200px;
+  // width: 279px;
+  // display: inline-block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  mix-blend-mode: multiply;
+  opacity: 0.8;
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
 }
 
-.attribution {
+footer {
   font-family: LexendDeca;
 }
 
 /* desktop design */
 @media screen and (min-width: 720px) {
-  .body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    height: 97vh;
-  }
-
   div.flex {
     flex-direction: row-reverse;
-    width: 810px;
-    height: 340px;
+    width: 51rem;
+    height: 22rem;
     text-align: left;
     margin: auto;
   }
 
   .flexstats {
     flex-direction: row;
+    padding-right: 0.5rem;
   }
 
-  img {
+  figure {
     border-radius: 0 9px 9px 0;
-    width: 48%;
+    width: 50%;
     height: 100%;
   }
 
   article {
     border-radius: 9px 0 0 9px;
     height: 100%;
-    min-width: 52%;
-    padding: 6% 10% 3% 6%;
+    width: 50%;
+    padding: 3rem 4.5rem 1.5rem 3rem;
   }
 
   .paragraph {
-    margin-bottom: 10%;
+    margin-bottom: 3rem;
+    font-size: 0.9rem;
   }
-
-  //   .header {
-  //     font-size: 2.2em;
-  //   }
 
   .stats {
     flex-direction: column;
@@ -186,7 +194,7 @@ img {
   }
 
   p {
-    font-size: 12px;
+    font-size: 0.8rem;
   }
 
   div h1 {
